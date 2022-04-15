@@ -28,5 +28,8 @@ BOARD_NAME           := SRPRL06C005
 TARGET_KERNEL_CONFIG := a70q_defconfig
 BOARD_MKBOOTIMG_ARGS += --board $(BOARD_NAME)
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Inherit from the proprietary version
 include vendor/samsung/a70q/BoardConfigVendor.mk
